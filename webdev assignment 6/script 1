@@ -1,11 +1,11 @@
 // ===================================================================
 // Assignment 6: String Manipulation & Operations
-// Name: Nitin | Roll No: 2628MCA0275 | Section: MCA Section C
-// Faculty: Arvind Reddy
+// Name: Naina | Roll No: 2628MCA0003 | Section: MCA Section C
+// Faculty: Vijay Kumar 
 // ===================================================================
 
 // Task 1: String declaration using single quotes, double quotes, and template literals
-let firstName = 'Nitin';                                           // Single quotes
+let firstName = 'Naina';                                           // Single quotes
 let course = "MCA Section C";                                     // Double quotes
 let studentInfo = `Student ${firstName} is enrolled in ${course}.`; // Template literals
 
