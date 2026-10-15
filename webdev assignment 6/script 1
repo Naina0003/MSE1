@@ -46,7 +46,7 @@ console.log("Extracted substring:", extractedText);
 
 // Task 6: Replacing a word and all its occurrences using replace()
 console.log("\n--- 6. Replacing Words with replace() ---");
-let feedback = "Nitin likes Java. Java is good.";
+let feedback = "Naina likes Java. Java is good.";
 let replacedSingle = feedback.replace("Java", "JavaScript");
 let replacedAll = feedback.replace(/Java/g, "JavaScript"); // Regex /g flag replaces all occurrences
 
