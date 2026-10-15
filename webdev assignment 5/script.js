@@ -1,7 +1,7 @@
 
 console.log("TASK 1: My Information");
 
-let myName = "Nitin";
+let myName = "Naina";
 let myAge = 20;
 let myCourse = "MCA";
 let myCollege = "KITE University";
@@ -49,7 +49,7 @@ console.log("Remainder:", a % b);
 // TASK 4: Using alert()
 
 alert("Welcome to JavaScript Programming!");
-alert("My name is Nitin and I am studying MCA.");
+alert("My name is Naina and I am studying MCA.");
 
 
 // TASK 5: Predict the Output
