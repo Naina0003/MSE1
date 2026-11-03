@@ -1,0 +1,210 @@
+/* General page styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #e9edf2;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #263238;
+    line-height: 1.45;
+    padding: 25px;
+}
+
+/* Main A4 resume sheet */
+.resume {
+    width: 210mm;
+    min-height: 297mm;
+    margin: auto;
+    background: #ffffff;
+    padding: 15mm 17mm;
+    box-shadow: 0 4px 18px rgba(0, 0, 0, 0.12);
+}
+
+/* Header */
+.header {
+    background: #142d4e;
+    color: #ffffff;
+    padding: 24px 26px;
+    border-left: 6px solid #36a3c9;
+    margin-bottom: 20px;
+}
+
+.header h1 {
+    font-size: 30px;
+    letter-spacing: 2px;
+    margin-bottom: 5px;
+}
+
+.designation {
+    color: #c8e5f2;
+    font-size: 11px;
+    font-weight: bold;
+    letter-spacing: 1.2px;
+    margin-bottom: 17px;
+}
+
+.contact {
+    font-size: 10px;
+    line-height: 1.8;
+    overflow-wrap: anywhere;
+}
+
+.contact strong {
+    color: #8ed4ed;
+}
+
+.contact a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+/* Sections */
+.section {
+    margin-bottom: 17px;
+}
+
+.section h2 {
+    font-size: 13px;
+    color: #142d4e;
+    letter-spacing: 1.1px;
+    border-bottom: 2px solid #36a3c9;
+    padding-bottom: 5px;
+    margin-bottom: 9px;
+}
+
+.section p {
+    font-size: 10.5px;
+    text-align: justify;
+}
+
+/* Education and project entries */
+.entry {
+    margin-bottom: 10px;
+    break-inside: avoid;
+}
+
+.entry-heading {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    gap: 10px;
+}
+
+.entry h3,
+.entry-heading h3 {
+    font-size: 11px;
+    color: #263f5c;
+}
+
+.entry-heading span {
+    font-size: 10px;
+    color: #526b80;
+    font-weight: bold;
+    white-space: nowrap;
+}
+
+.institution {
+    font-size: 10px;
+    font-weight: bold;
+    color: #44596c;
+}
+
+.details {
+    font-size: 10px;
+    color: #52616d;
+}
+
+/* Skills */
+.skills {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+}
+
+.skills span {
+    background: #eaf4f8;
+    color: #183d5b;
+    border: 1px solid #c5e0eb;
+    border-radius: 4px;
+    padding: 5px 12px;
+    font-size: 10px;
+    font-weight: bold;
+}
+
+/* Strengths */
+.strengths {
+    padding-left: 19px;
+    columns: 2;
+}
+
+.strengths li {
+    font-size: 10.5px;
+    margin-bottom: 4px;
+    break-inside: avoid;
+}
+
+/* Project details */
+.project-tech {
+    margin-top: 5px;
+    color: #40576b;
+}
+
+/* Footer */
+.footer {
+    border-top: 1px solid #d6dfe6;
+    padding-top: 9px;
+    margin-top: 20px;
+}
+
+.footer p {
+    font-size: 9px;
+    color: #52616d;
+    font-style: italic;
+}
+
+/* Print settings */
+@page {
+    size: A4;
+    margin: 0;
+}
+
+@media print {
+    body {
+        background: #ffffff;
+        padding: 0;
+        -webkit-print-color-adjust: exact;
+        print-color-adjust: exact;
+    }
+
+    .resume {
+        width: 210mm;
+        min-height: 297mm;
+        margin: 0;
+        padding: 15mm 17mm;
+        box-shadow: none;
+    }
+
+    a {
+        color: inherit;
+    }
+}
+
+/* Smaller screens */
+@media screen and (max-width: 800px) {
+    body {
+        padding: 0;
+    }
+
+    .resume {
+        width: 100%;
+        min-height: 100vh;
+        padding: 25px 20px;
+    }
+
+    .header h1 {
+        font-size: 25px;
+    }
+}
